@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Slideshow Project</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>Nav 1</li>
+          <li>Nav 2</li>
+          <li>Nav 3</li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="slideshow-wrapper">
+      <div class="slides-container">
+        <div class="slide fade">
+          <!-- slide 1 -->
+          <img src="images/slide-1.png" alt="" />
+        </div>
+        <div class="slide fade">
+          <!-- slide 2 -->
+          <img src="images/slide-2.png" alt="" />
+        </div>
+        <div class="slide fade">
+          <!-- slide 3 -->
+          <img src="images/slide-3.png" alt="" />
+        </div>
+        <div class="slide fade">
+          <!-- slide 4 -->
+          <img src="images/slide-4.png" alt="" />
+        </div>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+      </div>
+
+      <div class="dots">
+        <span class="dot" onclick="specificSlide(1)"></span>
+        <span class="dot" onclick="specificSlide(2)"></span>
+        <span class="dot" onclick="specificSlide(3)"></span>
+        <span class="dot" onclick="specificSlide(4)"></span>
+      </div>
+    </div>
+
+    <!--TODO
+      Add code to the main.js file to make the carousel function.
+      Clicking the prev/next controls and the dots should change the slide as expected.
+      While on the last slide, clicking the next button should take you back to the first slide.
+      Clicking the prev button while on the first slide should take you to the last slide.
+    -->
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+
+header {
+  background-color: #8f8f8f;
+  padding: 8px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 25px;
+  color: white;
+}
+
+/* Carousel */
+.slide {
+  display: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.slideshow-wrapper {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+.slides-container {
+  position: relative;
+  margin-bottom: 25px;
+  height: 300px;
+  background-color: #c7c7c7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 0 8px 16px;
+  margin-top: -30px;
+  color: white;
+  opacity: 0.5;
+  font-size: 48px;
+  line-height: 1;
+  transition: 0.3s;
+  background: transparent;
+  border: none;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.prev:hover,
+.next:hover {
+  opacity: 1;
+}
+
+.dots {
+  text-align: center;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #c7c7c7;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #8f8f8f;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
